@@ -1,0 +1,35 @@
+.nav-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 278px;
+  background: #fff;
+  border: 1px solid #2153cc;
+}
+
+.nav-sections {
+  display: flex;
+  margin-top: 200px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-sections .nav-section {
+  width: 143px;
+  height: 45px;
+  border-radius: 5px;
+  background: #2153cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-sections .nav-section p {
+  font-size: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}

@@ -1,4 +1,7 @@
 <div class="page-wrapper">
+  <div class="loader" *ngIf="!foods.loaded">
+    <mat-spinner class="spinner"></mat-spinner>
+  </div>
   <div class="food-cards" *ngIf="foods.loaded">
     <div *ngFor="let food of foods.data">
       <div

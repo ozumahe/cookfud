@@ -1,3 +1,14 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.loader .spinner {
+  width: 40px;
+}
+
 .food-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(234px, 1fr));
@@ -12,7 +23,7 @@
   height: 322px;
   background: #fff;
   border-radius: 8px;
-  border: 1px solid #f9dc54;
+  border: 1px solid #2153cc;
   cursor: pointer;
 }
 
@@ -45,15 +56,15 @@
 
 .food-card .details-container .row .price {
   font-size: 16.63px;
-  color: #fbcf0b;
+  color: #2153cc;
   font-weight: 700;
 }
 
 .food-card .details-container .row .icon {
   width: 40px;
   height: 40px;
-  background: #fbcf0b;
-  border-radius: 1px solid #fbcf0b;
+  background: #2153cc;
+  border-radius: 1px solid #2153cc;
   border-radius: 100%;
   display: flex;
   justify-content: center;
