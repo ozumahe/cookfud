@@ -1,3 +1,9 @@
 <div class="page-wrapper">
-  <p>food {{ id }} !</p>
+  <div class="description-container" *ngIf="food.loaded">
+    <img [src]="food.data.strMealThumb" alt="food" />
+    <div>
+      <p class="meal-name">{{ food.data.strMeal }}</p>
+      <p class="meal-description">{{ food.data.strInstructions }}</p>
+    </div>
+  </div>
 </div>

@@ -20,7 +20,6 @@ export class FoodsComponent implements OnInit {
 
     if (res.status === 200) {
       this.foods = { loaded: true, data: res.data.meals };
-      console.log(res.data.meals);
     }
   }
 }
