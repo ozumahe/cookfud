@@ -6,11 +6,18 @@
   width: 278px;
   background: #fff;
   border: 1px solid #2153cc;
+  padding: 20px;
 }
 
+.brand-name {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #2153cc;
+}
 .nav-sections {
   display: flex;
-  margin-top: 200px;
+  margin-top: 150px;
   flex-direction: column;
   align-items: center;
   gap: 20px;
