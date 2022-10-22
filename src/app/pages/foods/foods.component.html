@@ -10,6 +10,7 @@
         >
       </mat-select>
     </mat-form-field>
+    <button (click)="applyFilter()">Apply</button>
   </div>
   <div class="loader" *ngIf="!foods.loaded">
     <mat-spinner class="spinner"></mat-spinner>

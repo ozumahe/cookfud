@@ -10,14 +10,19 @@ export class FoodsComponent implements OnInit {
   foods: any = { loaded: false, data: [] };
   category: string = '';
   categories: any = { loaded: false, data: [] };
-
   selected = '';
+  isRequest = false;
 
   constructor() {}
 
   ngOnInit(): void {
     this.getFoods();
     this.getCategories();
+  }
+
+  applyFilter() {
+    this.isRequest = true;
+    this.getFoods();
   }
 
   async getFoods() {
@@ -27,6 +32,7 @@ export class FoodsComponent implements OnInit {
     });
 
     if (res.status === 200) {
+      this.isRequest = false;
       this.foods = { loaded: true, data: res.data.meals };
     }
   }

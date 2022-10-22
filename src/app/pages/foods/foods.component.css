@@ -23,6 +23,19 @@
   border: 1px solid #2153cc;
 }
 
+.header button {
+  margin-left: 10px;
+  margin-right: 10px;
+  background: #2153cc;
+  color: #fff;
+  width: 100px;
+  border: none;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .select {
   border: 1px solid #2153cc;
 }
