@@ -76,3 +76,22 @@
   width: 30px;
   height: 30px;
 }
+
+@media (max-width: 700px) {
+  .food-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(157.25px, 1fr));
+    gap: 20px;
+  }
+
+  .food-card {
+    width: 157.25px;
+  }
+
+  .food-card img {
+    width: 100%;
+    height: 151.41px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
