@@ -1,4 +1,12 @@
 <div class="page-wrapper">
+  <div class="header">
+    <mat-form-field appearance="fill">
+      <mat-label>Favorite food</mat-label>
+      <mat-select>
+        <mat-option> Hello </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
   <div class="loader" *ngIf="!foods.loaded">
     <mat-spinner class="spinner"></mat-spinner>
   </div>
