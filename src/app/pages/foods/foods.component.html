@@ -1,0 +1,31 @@
+<div class="page-wrapper">
+  <div class="food-cards" *ngIf="foods.loaded">
+    <div *ngFor="let food of foods.data">
+      <div
+        [ngClass]="'food-card'"
+        [routerLink]="['/food-details']"
+        [queryParams]="{ id: food.idMeal }"
+      >
+        <img [src]="food.strMealThumb" alt="food" />
+        <div class="details-container">
+          <div class="details">
+            <p>{{ food.strMeal }},</p>
+            <p>
+              {{
+                food.strInstructions.length > 50
+                  ? food.strInstructions.substring(0, 50)
+                  : food.strInstructions
+              }}
+            </p>
+          </div>
+          <div class="row">
+            <p class="price">{{ food.strMeal }}</p>
+            <div class="icon">
+              <img src="../../../assets/svgIcons/Group.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
